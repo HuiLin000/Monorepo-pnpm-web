@@ -1,0 +1,3 @@
+packages: 
+  - 'packages/**' # 代表所有项目都放在packages文件夹之下
+  - "shared"
