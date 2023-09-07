@@ -38,16 +38,9 @@ testFun()
       width="125"
       height="125"
     >
-    <van-button
-      type="success"
-      @click="testClick"
-    >
-      我是VAnt按钮，点我测试接口请求
-    </van-button>
 
-    <div class="useInfo">
-      打印请求结果：{{ useInfo }}
-    </div>
+
+ 
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -63,7 +56,20 @@ testFun()
     </div>
   </header>
 
+
+
   <RouterView />
+
+  <van-button
+    type="success"
+    @click="testClick"
+  >
+    我是VAnt按钮，点我测试接口请求
+  </van-button>
+
+  <div class="useInfo">
+    打印请求结果：{{ useInfo }}
+  </div>
 </template>
 
 <style scoped>

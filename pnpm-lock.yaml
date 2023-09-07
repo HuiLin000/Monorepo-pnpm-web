@@ -85,6 +85,12 @@ importers:
         specifier: workspace:*
         version: link:../../../shared
 
+  packages/w2023/web2:
+    dependencies:
+      '@manage/shared':
+        specifier: workspace:*
+        version: link:../../../shared
+
   shared: {}
 
 packages:
