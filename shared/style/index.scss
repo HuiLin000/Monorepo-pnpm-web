@@ -2,7 +2,7 @@
  * @Author: Lin wuhuilin001@163.com
  * @Date: 2023-09-04 16:00:08
  * @LastEditors: Lin wuhuilin001@163.com
- * @LastEditTime: 2023-09-04 16:37:44
+ * @LastEditTime: 2023-09-05 16:48:58
  * @FilePath: \Monorepo-pnpm-web\shared\style\index.scss
  * @Description: 
  * 目录的基础css，使用Normalize.css初始化css样式
@@ -10,6 +10,10 @@
  */
 
  @import './normalize.css';
+
+ html{
+    background-color: #ccc !important;
+ }
 
 
 

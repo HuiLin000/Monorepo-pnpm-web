@@ -1,26 +1,45 @@
 {
   "compilerOptions": {
-   "outDir":"dist", // 输出的目录
-   "sourceMap": true, //采用sourcemap 
-   "target": "es2016", // 目标语法
-   "module": "esnext", // 模块格式
-   "moduleResolution": "node", // 模块解析
-   "strict": false, // 严格模式
-   "resolveJsonModule": true, // 解析json模块
-   "esModuleInterop": true,// 允许通过es6语法引入commonjs模块
-   "jsx":"preserve",// jsx不转义
-   "lib":["esnext","dom"],// 支持的类库esnext及dom
-   "baseUrl": ".",// 当前是以该路径进行查找
-   "paths":{
-    //  "@manage/*":[
-    //   "packages/*/src",
-    //  ], // 即以@manage开头的都去该路径下查找，是个数组
-    "@manage/shared/components":["shared/components"],
-    "@manage/shared/utils":["shared/utils"],
-    "@manage/shared/fetch":["shared/fetch"],
-    "@manage/shared/style":["shared/style"],
-    // 或者用*号处理匹配
-    "@manage/shared/*":["shared/*"]
-   }
-  }
+
+
+    /* Language and Environment */
+    "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "lib": ["ESNext", "DOM"],                         /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "jsx": "preserve",                                /* Specify what JSX code is generated. */
+
+    "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
+    // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
+
+    /* Modules */
+    "module": "ESNext",                                /* Specify what module code is generated. */
+    // "rootDir": "./",                                  /* Specify the root folder within your source files. */
+    "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
+
+    "resolveJsonModule": true,                        /* Enable importing .json files. */
+
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+
+    "isolatedModules": true,                          /* Ensure that each file can be safely transpiled without relying on other imports. */
+
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "baseUrl": ".",
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "paths":{
+      //  "@manage/*":[
+      //   "packages/*/src",
+      //  ], // 即以@manage开头的都去该路径下查找，是个数组
+      // "@manage/shared/components":["shared/components"],
+      // "@manage/shared/utils":["shared/utils"],
+      // "@manage/shared/fetch":["shared/fetch"],
+      // "@manage/shared/style":["shared/style"],
+      // 或者用*号处理匹配
+      // "@manage/shared/*":["shared/*"]
+     }
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
