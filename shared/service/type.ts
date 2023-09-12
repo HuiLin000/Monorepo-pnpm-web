@@ -1,9 +1,8 @@
 export interface Request {
-    code: number
-    data: any
-    msg: string
-    pt: string
-    seq: string
-    success: boolean
-  }
-  
+  code: number;
+  data: any;
+  msg: string;
+  pt: string;
+  seq: string;
+  success: boolean;
+}
