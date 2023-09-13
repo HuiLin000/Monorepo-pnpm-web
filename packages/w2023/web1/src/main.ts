@@ -1,7 +1,7 @@
 import "vant/lib/index.css";
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-
+import "./assets/css/index.scss";
 import App from "./App.vue";
 import router from "./router";
 import { Button } from "vant";

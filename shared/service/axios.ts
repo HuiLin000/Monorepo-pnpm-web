@@ -82,8 +82,12 @@ service.interceptors.response.use(
 
 /* 导出封装的请求方法 */
 export const http = {
-  get<T = any>(url: string, config?: InternalAxiosRequestConfig): Promise<T> {
-    return service.get(url, config);
+  get<T = any>(
+    url: string,
+    params?: any,
+    config?: InternalAxiosRequestConfig
+  ): Promise<T> {
+    return service.get(url, { params, ...config });
   },
 
   post<T = any>(
@@ -109,6 +113,54 @@ export const http = {
     return service.delete(url, config);
   }
 };
+
+// export const apiGet = <T>({
+//   url,
+//   params,
+//   config
+// }: {
+//   url: string;
+//   params?: T;
+//   config?: InternalAxiosRequestConfig;
+// }): Promise<Request> => {
+//   return new Promise((resolve, reject) => {
+//     service.get(url, { params: params, ...config }).then(
+//       (response: any) => {
+//         if (typeof response === "string") {
+//           const ret: Request = eval(response);
+//           resolve(ret);
+//         } else {
+//           resolve(response);
+//         }
+//       },
+//       response => {
+//         reject(response);
+//       }
+//     );
+//   });
+// };
+
+// export const apiPost = ({
+//   url,
+//   data,
+//   config
+// }: {
+//   url: string;
+//   data?: object;
+//   config?: InternalAxiosRequestConfig;
+// }): Promise<Request> => {
+//   return new Promise((resolve, reject) => {
+//     service
+//       .post(url, data, { ...config })
+//       .then((response: any) => {
+//         resolve(response);
+//       })
+//       .catch(response => {
+//         reject(response);
+//         console.log("post error", response);
+//       });
+//   });
+// };
 
 /* 导出 axios 实例 */
 export default service;

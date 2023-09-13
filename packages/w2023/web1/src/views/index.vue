@@ -9,6 +9,8 @@ import { Md5 } from "ts-md5";
 
 import { testApi } from "@/api";
 
+import { useWxShare } from "@manage/shared";
+
 console.log(import.meta.env);
 
 // console.log(process.cwd());
@@ -25,11 +27,18 @@ const testClick = () => {
 
 checkFun();
 testFun();
+
+useWxShare({
+  title: "title",
+  desc: "desc",
+  imgUrl: "icon",
+  link: location.href
+});
 </script>
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>使用模板前，请先阅读.md文档</h1>
   </div>
 
   <van-button type="success" @click="testClick">

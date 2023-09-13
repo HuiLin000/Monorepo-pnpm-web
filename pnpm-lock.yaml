@@ -32,6 +32,9 @@ importers:
       weixin-js-sdk:
         specifier: ^1.6.0
         version: 1.6.0
+      weixin-js-sdk-ts:
+        specifier: ^1.6.1
+        version: 1.6.1
     devDependencies:
       '@commitlint/cli':
         specifier: ^17.5.1
@@ -5282,6 +5285,12 @@ packages:
     dependencies:
       defaults: 1.0.4
     dev: true
+
+  /weixin-js-sdk-ts@1.6.1:
+    resolution: {integrity: sha512-nnW5zjmg3JG3d+LsNA9ZK3aEKJ1JUR8UU5le84iXEcgfkjVtW0DAucrv/RPD3VHGDUM/5OD43a3bWoGWxIID0A==}
+    dependencies:
+      weixin-js-sdk: 1.6.0
+    dev: false
 
   /weixin-js-sdk@1.6.0:
     resolution: {integrity: sha512-3IYQH7aalJGFJrwdT3epvTdR1MboMiH7vIZ5BRL2eYOJ12BNah7csoMkmSZzkq1+l92sSq29XdTCVjCJoK2sBQ==}

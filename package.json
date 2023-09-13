@@ -1,6 +1,6 @@
 {
   "name": "monorepo-pnpm-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "private": "true",
   "main": "index.js",
@@ -27,7 +27,8 @@
     "vant": "^4.6.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
-    "weixin-js-sdk": "^1.6.0"
+    "weixin-js-sdk": "^1.6.0",
+    "weixin-js-sdk-ts": "^1.6.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",

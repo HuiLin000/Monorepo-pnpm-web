@@ -1,3 +1,1 @@
-import { http } from "./axios";
-
-export { http };
+export * from "./axios";
