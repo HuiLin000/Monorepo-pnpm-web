@@ -1,16 +1,16 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 // import federation from '@originjs/vite-plugin-federation'
-import { ViteBaseConfig } from "../vite.base.config";
+import { ViteBaseConfig } from '../vite.base.config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   ...ViteBaseConfig({
     port: 6000,
-    dirname: __dirname
+    dirname: __dirname,
   }),
   plugins: [
-    vue()
+    vue(),
     // federation({
     //   name: '@h5/core',
     //   exposes: {
@@ -19,5 +19,5 @@ export default defineConfig({
     //   },
     //   shared: ['vue'],
     // })
-  ]
+  ],
 });

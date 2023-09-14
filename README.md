@@ -17,7 +17,8 @@
 - 类型检查：[TypeScript 5.x](https://github.com/microsoft/TypeScript)
 - 组件库：[Vant 4.x](https://github.com/youzan/vant)
 - 请求库：[Axios](https://github.com/axios/axios)
-- sass、lodash-es ...
+- css预编译：[sass](https://www.sass.hk/)
+- 数组工具：[lodash-es](https://www.lodashjs.com/)
 
 ## 注意事项
 
@@ -84,6 +85,4 @@ pnpm install @manage/shared@* --filter @vueapp/{项目名}
 
 1. 创建复制项目命令行
 2. 采用node path 修改`../../../`的引入方式，防止有项目层级不对
-3. 封装微信jssdk 分享方法
-4. 封装移动端各种适配方案
-5. 查漏补缺....
+3. 查漏补缺....

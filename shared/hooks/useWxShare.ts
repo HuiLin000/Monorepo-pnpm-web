@@ -1,17 +1,12 @@
-import { getJsSDKConfigApi } from "@/api/index";
-import { useWxSDK, WxConfig } from "@/hooks/useWxSDK";
+import { getJsSDKConfigApi } from '../api/index';
+import { useWxSDK, WxConfig } from './useWxSDK';
 
-export function useWxShare(shareConfig: {
-  title: string;
-  imgUrl: string;
-  desc: string;
-  link: string;
-}) {
+export function useWxShare(shareConfig: { title: string; imgUrl: string; desc: string; link: string }) {
   const { initConfig, setShareInfo } = useWxSDK();
 
   const jssdkUrl = window.location.origin;
 
-  const shareUrl = window.location.href.split("#")[0];
+  const shareUrl = window.location.href.split('#')[0];
   // const signatureUrl = isiOSWechat()
   //   ? commonStore.commonState.visitUrl
   //   : shareUrl;
@@ -19,7 +14,7 @@ export function useWxShare(shareConfig: {
   getJsSDKConfigApi(jssdkUrl, shareUrl).then((config: WxConfig) => {
     initConfig(config).then(() => {
       setShareInfo({
-        ...shareConfig
+        ...shareConfig,
       });
     });
   });

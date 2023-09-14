@@ -2,15 +2,50 @@
  * @Author: Lin wuhuilin001@163.com
  * @Date: 2023-09-04 16:00:08
  * @LastEditors: Lin wuhuilin001@163.com
- * @LastEditTime: 2023-09-05 16:48:58
+ * @LastEditTime: 2023-09-14 19:08:49
  * @FilePath: \Monorepo-pnpm-web\shared\style\index.scss
  * @Description: 
  * 目录的基础css，使用Normalize.css初始化css样式
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
  */
 
-@import "./normalize.css";
+@import './normalize.css';
 
-html {
-  background-color: #ccc !important;
+.reset-opacity0 {
+  opacity: 0;
+}
+
+.reset-opacity1 {
+  opacity: 1;
+}
+
+.reset-overflowH {
+  overflow: hidden;
+}
+
+.reset-overflowS {
+  overflow: scroll;
+}
+
+.reset-position {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.reset-display {
+  display: none;
+}
+
+.reset-wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.reset-w100 {
+  width: 100%;
+}
+
+.reset-h100 {
+  height: 100%;
 }
